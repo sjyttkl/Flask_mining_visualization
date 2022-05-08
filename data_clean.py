@@ -8,7 +8,7 @@ import random
 #学历要求，随机
 def getLevel(x):
     if pd.isnull(x):
-        return random.choice(['博士', '硕士', '本科', '大专', '中专', '高中', '初中及以下'])
+        return random.choice(['博士', '硕士', '本科', '大专']) #'中专', '高中', '初中及以下'
     else:
         return x
 
