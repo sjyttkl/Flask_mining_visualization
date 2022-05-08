@@ -127,9 +127,9 @@ if __name__ == '__main__':
         # 通过输入岗位名称和页数来爬取对应的网页内容
         job_name = input('请输入你想要查询的岗位（中文名称）：')
         page = input('请输入你想要下载的页数（建议10-100页之间）：')
-        # data_collection.job51(datatable, job_name, page)
+        data_collection.job51(datatable, job_name, page)
         # 默认在猎聘网站上只爬取8页，一页有40个招聘岗位，而且大多数为文本，这部分信息不要求太多
-        # data_collection.liepin(datatable, job_name, '8')
+        data_collection.liepin(datatable, job_name, '8')
         print('*' * 50)
         print('数据采集完毕，下面进行数据的清洗操作~O(∩_∩)O')
         data_clean.job51_clean(datatable)
